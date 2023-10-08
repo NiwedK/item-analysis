@@ -36,8 +36,8 @@ st.set_page_config(page_title="Statistics", page_icon=":tada:", layout="wide")
 
 # - - HEADER SECTION - -
 with st.container():
-    st.header("Item Analysis for MCQ")
-    st.write("This Item Analysis program is designed by Aj.Dr.Niwed Kullawong, Health and Biomedical Analytics program, School of Health Science, MFU")
+    st.header("Item Analysis for MCQ with detailed analysis")
+    st.write("This Item Analysis program was designed by Aj.Dr.Niwed Kullawong (2023), Health and Biomedical Analytics program, School of Health Science, MFU")
 
 st.sidebar.header("User Input Data (.xlsx)")
 uploaded_file = st.sidebar.file_uploader("Pick a file", type=".xlsx")
