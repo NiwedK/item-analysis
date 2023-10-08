@@ -625,4 +625,4 @@ if uploaded_file:
         distractive_report_table2 = distractive_report_table2.round(3)
         distractive_report_table2['Percent'] = distractive_report_table2['Percent'].apply(lambda x: format_float(x, 2))
         distractive_report_table2 = distractive_report_table2.set_index('Question')
-        st.write(distractive_report_table2)
+        st.table(distractive_report_table2)
