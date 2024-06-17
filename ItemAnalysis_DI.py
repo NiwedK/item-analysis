@@ -28,11 +28,11 @@ def kr_int(KR20_score):
         return "Not recommended for testing"
 
 
-st.set_page_config(page_title="HSH-Item Analysis V1.2", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="SHS-Item Analysis V1.2", page_icon=":tada:", layout="wide")
 # - - HEADER SECTION - -
 
 with st.container():
-    st.header("Item Analysis for MCQ")
+    st.header("Item Analysis for MCQ V1.2")
     st.write("This program is designed by Aj.Dr.Niwed Kullawong, HBA program, SHS, MFU")
 
 col01, col02 = st.columns([2, 3])
