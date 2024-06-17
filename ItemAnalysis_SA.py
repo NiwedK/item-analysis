@@ -27,7 +27,7 @@ def kr_int(KR20_score):
         return "Not recommended for testing"
 
 
-st.set_page_config(page_title="HSH-Item Analysis-Essay V1.0", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="SHS-Item Analysis-Essay V1.0", page_icon=":tada:", layout="wide")
 # - - HEADER SECTION - -
 
 with st.container():
