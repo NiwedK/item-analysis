@@ -5,3 +5,7 @@ openpyxl
 matplotlib
 pingouin 
 plotly.express
+plotly
+factor-analyzer
+fpdf
+xlsxwriter
