@@ -18,3 +18,13 @@ factor-analyzer
 fpdf
 xlsxwriter
 openpyxl
+streamlit
+pandas
+matplotlib
+numpy
+plotly
+factor-analyzer
+fpdf
+xlsxwriter
+openpyxl
+altair<5
