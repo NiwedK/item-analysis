@@ -9,3 +9,12 @@ plotly
 factor-analyzer
 fpdf
 xlsxwriter
+streamlit
+pandas
+matplotlib
+numpy
+plotly
+factor-analyzer
+fpdf
+xlsxwriter
+openpyxl
