@@ -193,13 +193,14 @@ if uploaded_file:
     df4 = df3[df3['Category'] != "Middle"]
     variance_N = df4['Scores'].var()
 
-    # Create an empty list to store row data, then convert to DataFrame at the end
-    # OR initialize with object type to allow strings and numbers
+    # 1. Initialize with Object type to allow mixed strings and numbers
     report_table = pd.DataFrame(index=range(question_count), 
                             columns=['Question', 'N', 'WL', 'WU', 'CL', 'CU', 'Diff Index', 'Int-1', 'Disc Index', 'Int-2', 'p', 'q', 'pq'])
-
-    # Ensure numeric columns are initialized if necessary, but keep the whole DF flexible
     report_table = report_table.astype(object)
+
+    # 2. Pre-fill count columns with 0 so they don't stay as 'NaN' (which causes issues in some calculations)
+    count_cols = ['N', 'WL', 'WU', 'CL', 'CU']
+    report_table[count_cols] = 0
 
     report_table['N'] = report_table['N'].astype(int)
     report_table['WL'] = report_table['WL'].astype(int)
